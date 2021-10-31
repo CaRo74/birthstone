@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="wrap">
+    <h1>誕生石</h1>
+    <p>自分の誕生月を選んでクリックしてください</p>
+    <select name="month" id="select_month">
+      <option value="">-</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>月
+    <div class="btn">CLICK</div>
+  </section>
+
+  <div class="no_choose"></div>
+  <div class="choose"></div>
+
+  <div class="modal js-modal">
+    <div class="modal_bg js-modal-close"></div>
+    <div class="modal__content">
+      <div class="result_img"></div>
+      <div class="result"></div>
+      <p class="js-modal-close close_btn" href="">CLOSE</p>
+    </div>
+  </div>
+  <!-- <div class="result"></div>
+  <div class="result_img"> -->
+    <!-- <img src="img/アクアマリン.png"> -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="month.js"></script>
+</body>
+</html>

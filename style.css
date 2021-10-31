@@ -1,0 +1,137 @@
+@charset 'utf-8';
+body{
+  /* background-color: #e6beaa; */
+  text-align: center;
+  font-family: 'Hiragino Kaku Gothic ProN',Meiryo,Helvetica,Arial,sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.05rem;
+  color: #6e5064;
+}
+img{
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrap{
+  margin: 2rem auto;
+  width: 25rem;
+  height: 12rem;
+  border: 1px solid #6e5064;
+  border-radius: 8px;
+}
+h1{
+  background: #e5b7be;
+  padding: .5rem;
+  margin: 0;
+  border-radius: 8px 8px 0px 0px;
+}
+#select_month{
+  margin: 20px 10px 0 0;
+  border-radius: 4px;
+  padding: 10px;
+  height: 40px;
+  border: 1px solid #938a8a;
+  width: 20%;
+  cursor: pointer;
+}
+.btn,
+.close_btn{
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 4px;
+}
+.btn{
+  font-size: .8rem;
+  display: inline-block;
+  background-color: #e8c6e8db;
+  padding: .2rem;
+  border-bottom: 3px solid #6e5064;
+  border-right: 2px solid #6e5064;
+}
+.btn:hover{
+  opacity: .6;
+}
+.btn:active{
+  transform: translateY(2px);
+  border-bottom: 1px solid #6e5064;
+  border-right: 1px solid #6e5064;
+}
+.choose,
+.result_img{
+  margin: 2rem auto 0;
+  overflow: hidden;
+  max-width: 300px;
+}
+.result{
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+.modal{
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.modal_bg{
+  background: rgba(155, 133, 157, 0.577);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+.modal__content{
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  padding: 2rem;
+  width: 45%;
+}
+.close_btn{
+  /* border: 1px solid; */
+  /* border-radius: 8px; */
+  width: 7rem;
+  margin-left: auto;
+  padding: .5rem;
+}
+.close_btn:hover{
+  opacity: .6;
+}
+.no_choose{
+  margin-top: 40px;
+}
+
+/* モバイル版 ********************/
+@media screen and (max-width:767px){
+ .wrap{
+    width: 85%;
+    padding-bottom: 3.5rem;
+  }
+  .wrap p{
+    font-size: 1.3rem;
+    padding: 0 1rem;
+    text-align: left;
+  }
+  .btn{
+    padding: .4rem;
+  }
+  .modal{
+    left: 0;
+  }
+  .modal__content{
+    width: 65%;
+  }
+  .result{
+    font-size: 1.8rem;
+    text-align: left;
+  }
+  .no_choose{
+    font-size: 1.4rem;
+  }
+
+}
